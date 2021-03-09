@@ -1,0 +1,182 @@
+<html>
+<head>
+	<title>Login_page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.home a{
+			text-decoration:none;
+			font-size: 150%;
+			color: white;
+			position: fixed;
+			top:60px;
+			left: 0;
+		}
+		.home a:hover{
+			color:#1fbfb8;
+		}
+		.split {
+		  height: 100%;
+		  width: 50%;
+		  position: fixed;
+		  top: 0;
+		}
+
+		.left {
+		  background-image: url('Images/burger.jpg');
+		  background-repeat: no-repeat;
+		  width: 50%;
+		}
+		.right{
+	      right: 0;
+		}
+		.centered {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  text-align: center;
+		}
+		.centered1{
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  text-align: center;
+		  background-color: rgba(0,0,0,0.7);
+		  padding: 160px 160px;
+		  width: 50%;
+		  color: white;	
+		}
+		.quotes{
+			font-family: Bold;
+			font-size:300%;
+			color:white;
+		}
+		.Guestbutton{
+		  width: 120px;
+		  height: 60px;
+		  background-color: black;
+		  transition: width 2s;
+		  font-size: 130%;
+		  border-radius: 30px;
+		  outline:none;
+		  box-shadow:0 3px black;
+		  color: white;
+		}
+		.Guestbutton:hover {
+		  width: 300px;
+		  background-color:powderblue;
+		  cursor: pointer;
+		  color: black;
+		}
+		input{
+			border-radius: 50px;
+			padding:15px 32px;
+			outline: none;
+			width:400px;
+			border-style: groove;
+		}
+		input:hover 
+		{
+		   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	    }
+		h1{
+			color:#1fbfb8;
+		}
+		::placeholder{
+			font-size: 130%;
+			color:black;
+		}
+		.eyeicon{
+			position: absolute;
+			border:none;
+			top: 300px;
+			left:300px;
+		}
+		p{
+			font-size: 150%;
+		}
+		.loginbutton{
+			font-size:120%;
+			box-shadow: 0 3px black;
+			cursor:pointer;
+		}
+		.resetbutton{
+			font-size:120%;
+			margin-left: 1%;
+			box-shadow: 0 3px black;
+			cursor: pointer;
+		}
+		.boxmodel {
+		  background-color:white;
+		  width: 500px;
+		  padding: 50px;
+		  float:right;
+		  margin-top:20px;
+		  margin-left: 50px;
+		  margin-right: 70px;
+		  height:92%;
+		  border:5px solid #1fbfb8;
+		  border-radius: 16px;
+		  outline: none;
+		}
+	</style>
+</head>
+<body>
+	
+
+    <div class = "vl">
+	<div class="split left">
+	  <div class="centered1">
+
+	  	<div class="home">
+		<a href="bgsetting.html" style="margin-left:2%;float: left;"class="fa fa-home">Home</a>
+		</div>
+
+	    <h2>
+	    <div class = "quotes">EAT</div>whatever you want! If anyone tries to lecture you
+	    about your weight <div class = "quotes">EAT</div> them too....</h2>
+	    <button class = "Guestbutton">Login as Guest</button>
+
+	</div>
+	</div>
+
+	<div class = "bgimage">
+	<button class = "boxmodel">
+    <div class="split right">
+	  <div class="centered">
+	  	<h1>Login</h1>
+	  	<img src = "Images/user.jpg">
+	  	<form action="" method="post">
+	  		<label for = "username"></label>
+	  		<input type="text" id = "username" name="UserName" size = "30" placeholder = "UserName:" required><br><br>
+
+	  		<label for = "pswd"></label>
+	  		<input type="password" id = "pswd" name="Password" size = "30" placeholder = "Password:" pattern= "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br><br>
+
+	  		<input type="image"  src = "Images/eyeicon-removebg-preview.png" style ="width:60px;height:40px" class = "eyeicon" onclick="myFunction()">
+
+	  		<input type = "submit" class = "loginbutton" value = "Login" style = "background-color: #1fbfb8;border:none;margin-left: 1.5%;width:48%;">
+
+	  		<input type = "reset" class = "resetbutton" value = "Reset"  style = "background-color: #1fbfb8;border:none;border-radius:25px;width:48%;float:left;"><br><br>
+	  		<p>Forgot  <a href="">Password?</a></p>
+	  		<a>Not a member?<a href="signuppage.html"  style = "color:#f70000;text-decoration: none;"> Create an Account</a></a>
+	  	</form>
+	  </div>
+	</div>
+	</button>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("pswd");
+  if (x.type == "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+</div>
+</body>
+</html>

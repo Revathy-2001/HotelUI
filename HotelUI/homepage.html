@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+	<style>
+		.navbar{
+			font-size: 150%;
+			display: inline-block;
+			position: fixed;
+			width: 100%;
+			top:15px;
+		}
+		.navbar a{
+			text-decoration: none;
+			color: white;
+			margin-right:8%;
+			float: right;
+		}
+		body:before{
+            content: "";
+            background-image: url('Images/hotelimage.jpg');
+            position: absolute;
+            background-size: cover;
+            z-index: -1; 
+            height: 100%; width: 100%;
+            filter: blur(4px);
+            background-attachment: fixed;
+		}
+		.welcome{
+			margin-top: 10%;
+			color:white;
+			text-align:center;
+			font-family: Segoe print;
+		}
+		.hotelname{
+			color:white;
+			text-align:center;
+			font-family: Segoe print;
+		}
+		p{
+			color: white;
+			font-size: 150%;
+			text-align: center;
+		}
+		#button{
+			padding: 15px;
+			background-color: transparent;
+			margin-left: 40%;
+			color: white;
+			width: 18%;
+			font-size: 150%;
+			border:5px outset #cc3333;
+			outline: none;
+			display: block;
+			cursor: pointer;
+			border-radius: 19px;
+		}
+		#button:hover{
+			background-color: #cc3333; 
+		}
+		span{
+			margin-left: 11%;
+			text-align: center;
+			font-size: 100px;
+		}
+		.Restaurant-details{
+			background-color:lightgrey;
+			padding: 16px;
+			display:block;
+			font-size: 120%;
+			position: relative;
+			top:240px;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<em style="font-size: 120%;color: white;margin-left: 2%;position: relative;top:0;">Red Chilli Restaurant</em>
+		<a href="#"style="margin-right: 2%;">Sign Up</a>
+		<a href="#">Login</a>
+		<a href="#">Menu</a>
+		<a href="#">About us</a>
+	</div>
+
+	<h1 class="welcome">Welcome</h1>
+	<h1 class="hotelname">RED CHILLI RESTAURANT</h1>
+	<p>________An oasis of pleasure_________</p>
+	<form action="menupage2.html">
+	<input type="submit" name="clickMe" id="button" value="click Me">
+	</form>
+	<div class="Restaurant-details">
+	    <span class="fa fa-phone"><b>CONTACT:</b><br><br>
+			Tel-No:044 123 456<br>
+        	Phn-No:9087654321.
+        </span>
+        <span class="fa fa-map-marker"><b>MENU:</b><br><br>
+        	No: 123, Hot cross Street,<br>
+        	Guindy Main road,Chennai-32.<br>
+        </span>
+        <span class="fa fa-clock-o"><b>TIMINGS:</b><br><br>
+        	Monday to Friday: 9 Am to 9 Pm;<br>
+        	Saturday & Sunday:7 Am to 7 Pm; 
+        </span>
+    </div>
+</body>
+</html>

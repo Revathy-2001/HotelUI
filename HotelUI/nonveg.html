@@ -1,0 +1,228 @@
+<html>
+<head>
+	<title>Non-veg</title>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<style>
+	.navbar{
+		position: fixed;
+		top: 0;
+		padding: 16PX;
+		width: 100%;
+	}
+	.navbar a{
+		text-decoration: none;
+		margin-left: 8%;
+		display: inline;
+		color: white;
+		font-size: 120%;
+	}
+	.navbar a:hover{
+		background-color: rgb(0,0,0,0.7);
+		color: white;
+		padding: 10px;
+	}
+	button{
+			padding: 10px;
+			width:30%;
+			background-color:rgb(0,0,0,0.7);
+			border:none;
+			text-align: center;
+			font-size: 150%;
+			color: white;
+		}
+		img{
+			width: 250px;
+			height: 250px;
+		}
+		.biryani{
+			width: 20%;
+		}
+		.FriedRice{
+			width: 20%;
+		}
+		.PrawnBiryani{
+			width: 20%;
+		}
+		.MuttonBiryani{
+			width: 20%;
+		}
+		.Chicken{
+			width: 20%;
+		}
+		.Mutton{
+			width: 20%;
+		}
+		.Prawn{
+			width: 20%;
+		}
+		.Fish{
+			width: 20%;
+		}
+		#Quantity{
+			width: 20%;
+		}
+		.Buynow{
+			padding: 12px;
+			background-color:rgb(0,0,0);
+			border:none;
+			color: white;
+		}
+		body{
+			background-image: url('Images/red.jpg');
+			background-repeat:no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+        }
+		::placeholder{
+			color:black;
+		}
+		.whole{
+			position: scroll;
+			margin-top: 10%;
+		}
+	</style>
+</head>
+<body> 
+
+	<div class="navbar">
+		<a href="bgsetting.html"  class="fa fa-home">Home</a>
+		<a href="second_page.html" class="fa fa-info-circle">About us</a>
+		<a href="Fourth_page.html" class="fa fa-bars">Menu</a>
+		<a href="Third_page.html" class="fa fa-picture-o">Gallery</a>
+		<a href="signuppage.html" class="fa fa-user">Sign Up</a>
+		<a href="loginpage.html" class="fa fa-users">Login</a>
+	</div>
+
+ <div class="whole">
+
+	<img src="Images/nv1.jpg" style = "width:50px;height: 50px;position: fixed;top:0;right: 0;">
+	<center>
+	<button>Non-Veg</button>
+	<br><br><br><br>
+	<div>
+		<button class="biryani">Biryani</button>
+		<button class="FriedRice">FriedRice</button>
+		<button class="MuttonBiryani">MuttonBiryani</button>
+		<button class="PrawnBiryani">PrawnBiryani</button>
+	</div>
+	<div>
+	<img src="Images/Biryani.jpg">
+	<img src="Images/friedRice.jpg">
+	<img src="Images/muttonbiryani.jpg">
+	<img src="Images/prawnbiryani.jpg">
+	</div>
+	<div>
+	<form method = "post">
+	  <input list="Quantity" name="Quantity" id="Quantitys" placeholder="Choose your Quantity">
+	  <datalist id="Quantity">
+	    <option value="1 kg - Rs.90">
+	    <option value="2 kg - Rs.180">
+	    <option value="3 kg - Rs.270">
+	    <option value="4 kg - Rs.360">
+	    <option value="5 kg - Rs.450">
+	  </datalist>
+	  <input type="Submit" value="Buy Now" class="Buynow">
+	  <input list="Quantity" name="Quantity" id="Quantitys" placeholder="Choose your Quantity">
+	  <datalist id="Quantity">
+	    <option value="1 kg - Rs.90">
+	    <option value="2 kg - Rs.160">
+	    <option value="3 kg - Rs.240">
+	    <option value="4 kg - Rs.320">
+	    <option value="5 kg - Rs.400">
+	  </datalist>
+	  <input type="Submit" value="Buy Now" class="Buynow">
+	  <input list="Quantity" name="Quantity" id="Quantitys" placeholder="Choose your Quantity">
+	  <datalist id="Quantity">
+	    <option value="1 kg - Rs.90">
+	    <option value="2 kg - Rs.180">
+	    <option value="3 kg - Rs.270">
+	    <option value="4 kg - Rs.360">
+	    <option value="5 kg - Rs.450">
+	  </datalist>
+	  <input type="Submit" value="Buy Now" class="Buynow">
+	  <input list="Quantity" name="Quantity" id="Quantitys" placeholder="Choose your Quantity">
+	  <datalist id="Quantity">
+	    <option value="1 kg - Rs.70">
+	    <option value="2 kg - Rs.140">
+	    <option value="3 kg - Rs.210">
+	    <option value="4 kg - Rs.280">
+	    <option value="5 kg - Rs.350">
+	  </datalist>
+	  <input type="Submit" value="Buy Now" class="Buynow">
+
+	</form>
+	</div>
+    <br><br>
+	<br><br>
+	<button>Gravy</button>
+	<br><br>
+	<div>
+		<button class="Chicken">Chicken Gravy</button>
+		<button class="Mutton">Mutton Gravy</button>
+		<button class="Prawn">Prawn Gravy</button>
+		<button class="Fish">Fish Gravy</button>
+	</div>
+	<div>
+	<img src="Images/chickengravy.jpg">
+	<img src="Images/muttongravy.jpg">
+	<img src="Images/prawngravy.jpg">
+	<img src="Images/fishgravy.jpg">
+	</div>
+	<div>
+	<form>
+	  <input list="Gravy" name="Quantity" id="Quantitys" placeholder="Choose your Quantity">
+	  <datalist id="Gravy">
+	    <option value="1 - Rs.120">
+	    <option value="2 - Rs.240">
+	    <option value="3 - Rs.360">
+	    <option value="4 - Rs.480">
+	    <option value="5 - Rs.540">
+	  </datalist>
+	  <input type="Submit" value="Buy Now" class="Buynow">
+	  <input list="Gravy" name="Quantity" id="Quantitys" placeholder="Choose your Quantity">
+	  <datalist id="Gravy">
+	    <option value="1 - Rs.110">
+	    <option value="2 - Rs.220">
+	    <option value="3 - Rs.330">
+	    <option value="4 - Rs.440">
+	    <option value="5 - Rs.550">
+	  </datalist>
+	  <input type="Submit" value="Buy Now" class="Buynow">
+	  <input list="Gravy" name="Quantity" id="Quantitys" placeholder="Choose your Quantity">
+	  <datalist id="Gravy">
+	    <option value="1 - Rs.100">
+	    <option value="2 - Rs.200">
+	    <option value="3 - Rs.300">
+	    <option value="4 - Rs.400">
+	    <option value="5 - Rs.500">
+	  </datalist>
+	  <input type="Submit" value="Buy Now" class="Buynow">
+	  <input list="Gravy" name="Quantity" id="Quantitys" placeholder="Choose your Quantity">
+	  <datalist id="Gravy">
+	    <option value="1 - Rs.150">
+	    <option value="2 - Rs.300">
+	    <option value="3 - Rs.450">
+	    <option value="4 - Rs.600">
+	    <option value="5 - Rs.750">
+	  </datalist>
+	  <input type="Submit" value="Buy Now" class="Buynow">
+	</form>
+	</div>
+    <br><br><br>
+
+</div>
+<!-- <script>
+var nav = document.querySelector('nav'); // Identify target
+
+window.addEventListener('scroll', function(event) { // To listen for event
+    event.preventDefault();
+
+    if (window.scrollY <= 150) { // Just an example
+        nav.style.backgroundColor = '#000'; // or default color
+    } else {
+        nav.style.backgroundColor = 'transparent';
+    }
+});
+</script> -->
+</body>
+</html>

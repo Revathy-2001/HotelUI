@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Icons</title>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<style>
+		ul{
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #ff9966;
+		}
+		li{
+			display: inline;
+		}
+		li a{
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+		li a:hover {
+  			background-color:#ff0000;
+  			color: white;
+		}
+		#login{
+		  color: white;
+		  text-align: center;
+		  padding: 5px;
+		  outline: none;
+		  cursor:pointer;
+		  margin-top:7px;
+		}
+		#login:hover {
+  			background-color:#ff0000;
+		}
+		#sidenavbar a{
+			position: absolute;
+			left: -90px;
+			transition: 0.5s;
+			padding:15px;
+			width: 120px;
+			text-decoration: none;
+			border:none;
+			font-size: 20px;
+		}
+		#sidenavbar a:hover{
+			left: 0;
+		}
+		.about{
+			background-color: red;
+			color: white;
+		}
+		.policy{
+			background-color: blue;
+			color: white;
+		}
+		.help{
+			background-color: yellow;
+			color: black;
+		}
+		.offers{
+			background-color: orange;
+			color: black
+		}
+		.account{
+			background-color: green;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div>
+	<ul>
+	<li style="font-size: 200%;color: black;margin-left: 1%;margin-top: 3%;">RED CHILLI RESTAURANT</li>
+	<li><a class="fa fa-home" href = "" style="font-size: 200%;color: black;float: right;"></a></li>
+    <input type="submit" id = "login" name="login" value = "Login" style="font-size: 180%;color: black;float: right;">
+    <input type="submit" id = "login" name="login" value = "Sign up" style="font-size: 180%;color: black;float: right;margin-right: 1%;">
+	</ul>
+	</div><br><br><br>
+	<div id="sidenavbar">
+		<a href="#" class="about">About</a><br><br><br><br>
+		<a href="#" class="policy">Privacy</a><br><br><br><br>
+		<a href="#" class="help">Help</a><br><br><br><br>
+		<a href="#" class="offers">Offers</a><br><br><br><br>
+		<a href="#" class="account">Account</a><br><br><br><br>
+	</div>
+</body>
+</html>

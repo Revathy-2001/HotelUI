@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Front_Page</title>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<style>
+		body{
+			background-image:url('Images/indiandish.jpg');
+			background-repeat:no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			margin:0;
+		}
+		.navbar{
+		background-color: rgb(0,0,0,0.7);
+		padding: 13px;
+		margin:0;
+		position: fixed;
+		width: 100%;
+		}
+		.navbar a{
+			font-size: 150%;
+			text-decoration: none;
+			margin-left: 5%;
+			text-align: center;
+			color: white;
+		}
+		.navbar a:hover{
+			background-color:rgb(120,120,120,0.8);
+			color: black;
+			padding: 5px;
+		}
+		.main{
+			font-size: 150%;
+			font-family:Italic Bold;
+			color: white;
+			background-color: rgb(0,0,0,0.7);	
+			text-align: center;position: fixed;
+			top:50px;
+			width: 100%;
+			padding-bottom: 120px;
+		}
+		#button{
+			padding: 8px;
+			background-color: transparent;
+			margin-left: 40%;
+			color:white;
+			width: 18.5%;
+			font-size: 120%;
+			border:5px outset white;
+			outline: none;
+			display: block;
+			cursor: pointer;
+		}
+		#button:hover{
+			background-color:; 
+		}
+		span{
+			margin-left: 11%;
+			text-align: center;
+			font-size: 100px;
+		}
+		.Restaurant-details{
+			background-color:rgb(0,0,0,0.9);
+			padding: 15px;
+			display:block;
+			font-size: 120%;
+			position: fixed;
+			width: 100%;
+			top:500px;
+			height: 100%;
+			color: white;
+			padding-bottom: 3px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="navbar">
+		<a href="#" style="margin-left:20%;"class="fa fa-info-circle">About us</a>
+		<a href="#" class="fa fa-bars">Menu</a>
+		<a href="#" class="fa fa-picture-o">Gallery</a>
+		<a href="#" class="fa fa-user">Sign Up</a>
+		<a href="#" class="fa fa-users">Login</a>
+	</div>
+	
+	<div class="main">
+		<br><br>
+		<p style="font-size: 100%;top:">Welcome</p>
+		<h1 class="hotelname">RED CHILLI RESTAURANT</h1>
+		<p>________Paradise on Your Plate_________</p>
+		<form action="menupage2.html">
+		<input type="submit" name="clickMe" id="button" value="Order Now">
+		</form>
+	</div>
+
+	<div class="Restaurant-details">
+	    <span class="fa fa-phone"><b>CONTACT:</b><br><br>
+			Tel-No:044 123 456<br>
+        	Email: RedChilli@gmail.com.
+
+        </span>
+        <span class="fa fa-map-marker"><b>VISIT:</b><br><br>
+        	No: 123, Hot cross Street,<br>
+        	Guindy Main road,Chennai-32.<br>
+        </span>
+        <span class="fa fa-clock-o"><b>OPEN HOURS:</b><br><br>
+        	Monday to Friday: 9 Am to 9 Pm;<br>
+        	Saturday & Sunday:7 Am to 7 Pm; 
+        </span>
+    </div>
+
+</body>
+</html>
